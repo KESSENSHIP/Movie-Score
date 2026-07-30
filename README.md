@@ -60,14 +60,14 @@ movie-api/
 
 #### 前端 movie-frontend 结构
 movie-frontend/
-├─ src/
-│ ├─ views/ # 19 个页面组件（用户端 / 管理员端）
-│ ├─ router/index.js # 路由配置 + 登录权限守卫
-│ ├─ utils/ # axios 请求封装、MD5 加密工具
-│ ├─ App.vue # 根组件
-│ └─ main.js # Vue 入口文件
-├─ public/ # 静态资源
-└─ package.json # NPM 依赖
+├── src/
+│   ├── views/          # 19 个页面组件（用户端 / 管理员端）
+│   ├── router/index.js # 路由配置 + 登录权限守卫
+│   ├── utils/          # axios 请求封装、MD5 加密工具
+│   ├── App.vue         # 根组件
+│   └── main.js         # Vue 入口文件
+├── public/             # 静态资源
+└── package.json        # NPM 依赖
 
 #### python_analysis 数据分析目录
 存放全部Python算法脚本、可视化图表、Jupyter笔记、数据库驱动jar包：
