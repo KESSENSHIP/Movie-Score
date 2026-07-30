@@ -34,12 +34,43 @@
 
 
 ### 1.4 项目整体目录结构
+## 项目目录结构
+
+```text
 Movie-Score/
-├─ movie-api/ # SpringBoot 后端项目
-├─ movie-frontend/ # Vue3 前端项目
-├─ python_analysis/ # Python 算法脚本、图表、notebook
-├─ .gitignore # Git 忽略配置
-└─ README.md # 项目说明文档
+├── movie-api/                      # SpringBoot 后端项目
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/
+│   │       │   └── com/neuedu/movieapi/
+│   │       │       ├── common/     # 全局通用类（统一返回 Result）
+│   │       │       ├── config/     # 全局配置（跨域、安全、JWT、数据库初始化）
+│   │       │       ├── controller/ # 15 个业务接口控制器
+│   │       │       ├── entity/     # 14 张数据表实体类
+│   │       │       ├── interpreter/# JWT 登录拦截器
+│   │       │       ├── mapper/     # MyBatis 数据库映射层
+│   │       │       ├── service/    # 业务逻辑层
+│   │       │       └── util/       # 工具类（JWT 生成解析）
+│   │       └── resources/
+│   │           ├── als_model/      # ALS 推荐模型二进制文件
+│   │           └── application.properties # 项目配置（数据库、DeepSeek 密钥）
+│   └── pom.xml                     # Maven 依赖配置
+│
+├── movie-frontend/                 # Vue3 前端项目
+│   ├── src/
+│   │   ├── views/                  # 19 个页面组件（用户端/管理员端）
+│   │   ├── router/
+│   │   │   └── index.js            # 路由配置 + 登录权限守卫
+│   │   ├── utils/                  # axios 请求封装、MD5 加密工具
+│   │   ├── App.vue                 # 根组件
+│   │   └── main.js                 # Vue 入口文件
+│   ├── public/                     # 静态资源
+│   └── package.json                # NPM 依赖
+│
+├── python_analysis/                # Python 算法脚本、图表、notebook
+├── .gitignore                      # Git 忽略配置
+└── README.md                       # 项目说明文档
+```
 
 
 #### 后端 movie-api 结构
