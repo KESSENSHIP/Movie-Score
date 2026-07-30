@@ -1,0 +1,236 @@
+/* 全局圆角美化 */
+:root {
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 20px;
+}
+
+/* 海报图片样式 */
+.cover-img {
+  width: 50px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.no-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 70px;
+  background-color: #f5f7fa;
+  border-radius: var(--border-radius-sm);
+  color: #909399;
+  font-size: 12px;
+}
+
+.cover-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.preview-img {
+  width: 80px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 排序按钮区域 */
+.sort-buttons {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* 表格圆角 */
+.el-table {
+  border-radius: var(--border-radius-lg) !important;
+  overflow: hidden;
+}
+
+.el-table__inner-wrapper {
+  border-radius: var(--border-radius-lg) !important;
+}
+
+.el-table th,
+.el-table td {
+  border-radius: var(--border-radius-sm);
+}
+
+/* 按钮圆角 */
+.el-button {
+  border-radius: var(--border-radius-md) !important;
+}
+
+/* 对话框圆角 */
+.el-dialog {
+  border-radius: var(--border-radius-xl) !important;
+}
+
+.el-dialog__header {
+  border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
+}
+
+.el-dialog__body {
+  border-radius: 0 0 var(--border-radius-xl) var(--border-radius-xl);
+}
+
+/* 输入框圆角 */
+.el-input__wrapper {
+  border-radius: var(--border-radius-md) !important;
+}
+
+.el-input-number {
+  border-radius: var(--border-radius-md) !important;
+}
+
+/* 表单项圆角 */
+.el-form-item__content {
+  border-radius: var(--border-radius-md);
+}
+
+/* 标签圆角 */
+.el-tag {
+  border-radius: var(--border-radius-md) !important;
+}
+
+/* 分页器圆角 */
+.el-pagination {
+  border-radius: var(--border-radius-lg);
+  padding: 8px 16px;
+  background: #f5f7fa;
+}
+
+.el-pagination button {
+  border-radius: var(--border-radius-sm) !important;
+}
+
+.el-pagination .btn-prev,
+.el-pagination .btn-next {
+  border-radius: var(--border-radius-sm) !important;
+}
+
+.el-pager li {
+  border-radius: var(--border-radius-sm) !important;
+}
+
+.el-pager li.active {
+  border-radius: var(--border-radius-sm) !important;
+}
+
+/* 评分组件圆角 */
+.el-rate {
+  border-radius: var(--border-radius-md);
+}
+
+/* 日期选择器圆角 */
+.el-date-picker {
+  border-radius: var(--border-radius-lg) !important;
+}
+
+/* 工具栏按钮区域 */
+.toolbar {
+  border-radius: var(--border-radius-md);
+  padding: 12px 16px;
+  background: #f5f7fa;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* 评分值样式 */
+.rating-value {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--border-radius-md);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rating-high {
+  background-color: #f0f9eb;
+  color: #67c23a;
+}
+
+.rating-medium {
+  background-color: #fffbeb;
+  color: #e6a23c;
+}
+
+.rating-low {
+  background-color: #fef2f2;
+  color: #f56c6c;
+}
+
+/* 点赞数样式 */
+.votes-value {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #e6a23c;
+  font-weight: bold;
+}
+
+.votes-value .el-icon {
+  font-size: 16px;
+}
+
+/* 表格行悬停效果 */
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: #f0f9ff !important;
+}
+
+/* 表格单元格内边距 */
+.el-table th > .cell,
+.el-table td > .cell {
+  padding: 10px 12px;
+}
+
+/* 主内容区域 */
+.main-container {
+  border-radius: var(--border-radius-xl);
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* 侧边栏圆角 */
+.el-menu {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+}
+
+.el-menu-item {
+  border-radius: var(--border-radius-md) !important;
+  margin: 4px 8px !important;
+}
+
+.el-menu-item.is-active {
+  border-radius: var(--border-radius-md) !important;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
