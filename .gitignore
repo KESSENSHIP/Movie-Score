@@ -1,0 +1,15 @@
+#前端编译&依赖
+movie-frontend/node_modules/
+movie-frontend/dist/
+
+#后端maven编译产物
+movie-api/target/
+
+#IDE缓存文件
+.idea/
+.vscode/
+*.iml
+
+#系统垃圾文件
+Thumbs.db
+.DS_Store
