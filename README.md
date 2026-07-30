@@ -1,3 +1,46 @@
+# Movie-Score
+基于 Vue3 + SpringBoot3 + MySQL 的全栈电影智能分析综合系统
+
+## 一、项目概述
+### 1.1 项目名称
+电影智能管理与分析系统（Movie Management System）
+
+### 1.2 项目描述
+本项目是基于 Spring Boot + Vue 3 构建的全栈电影管理与智能分析系统。集成四大机器学习能力：ALS协同过滤个性化推荐、K-Means++用户画像聚类、ARIMA时间序列产量预测、DeepSeek大模型评论情感分析。
+完整实现电影信息管理、评分评论、个性化推荐、多维数据可视化分析，适用于课程设计、毕业设计。
+
+### 1.3 技术栈
+| 分类 | 技术 | 版本 | 说明 |
+|------|------|------|------|
+| 后端框架 | Spring Boot | 3.x | Java Web后端 |
+| 数据库 | MySQL | 8.x | 关系型数据库 |
+| ORM | MyBatis | 3.x | 数据持久层 |
+| 权限认证 | Spring Security + JWT | - | 登录鉴权 |
+| 密码加密 | BCrypt | - | 用户密码哈希存储 |
+| 前端框架 | Vue 3 | 3.4.x | 前端主体框架 |
+| UI组件 | Element Plus | 2.6.x | 后台管理组件库 |
+| 可视化 | ECharts | 6.1.x | 图表展示 |
+| 路由 | Vue Router | 4.3.x | 前端路由控制 |
+| HTTP请求 | Axios | 1.6.x | 前后端接口交互 |
+| 构建工具 | Vite | 5.1.x | 前端打包 |
+| 聚类算法 | Apache Commons Math3 | - | K-Means++用户分群 |
+| 大数据处理 | PySpark | - | 数据集预处理 |
+| 大模型 | DeepSeek API | - | 评论情感分析 |
+| 时序预测 | statsmodels ARIMA | - | 电影产量趋势预测 |
+| 数据计算 | Pandas / NumPy / SciPy | - | 数值分析 |
+| 后端运行环境 | JDK | 17+ | Java运行依赖 |
+| 数据分析环境 | Python | 3.10 | 算法脚本运行 |
+Movie-Score/
+├─ movie-api/ # SpringBoot 后端项目
+├─ movie-frontend/ # Vue3 前端项目
+├─ python_analysis/ # Python 算法脚本、图表、notebook
+├─ .gitignore # Git 忽略配置
+└─ README.md # 项目说明文档
+### 1.4 项目整体目录结构
+
+#### 后端 movie-api 结构
+
+#### 前端 movie-frontend 结构
 
 #### python_analysis 数据分析目录
 存放全部Python算法脚本、可视化图表、Jupyter笔记、数据库驱动jar包：
